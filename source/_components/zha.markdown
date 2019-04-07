@@ -91,6 +91,11 @@ enable_quirks:
   default: true
 {% endconfiguration %}
 
-To add new devices to the network, call the `permit` service on the `zha` domain. Do this by clicking the Service icon in Developer tools and typing `zha.permit` in the **Service** dropdown box. Next, follow the device instructions for adding, scanning or factory reset.
+To add new devices to the network proceed to the ZHA section under Confgiuration. Click the Add Devices button up top and you will see a scrolling log of the process on the bottom of the screen. Put your device into pairing mode acorrding to the manufacturer's instructions. The new device should appear at the top of the screen allowing you to rename them and/or assign them to an area. 
+<iframe width="692" height="389" src="https://www.youtube.com/embed/ye-tf2RFfLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+Some battery powered devices will need to be kept alive while pairing, this can sometimes be acheived by periodically pressing the pairing button during the pairing process.
+
+Additionally you may call the `permit` service on the `zha` domain. Do this by clicking the Service icon in Developer tools and typing `zha.permit` in the **Service** dropdown box. Next, follow the device instructions for adding, scanning or factory reset.
 
 In case you want to add Philips Hue bulbs that have previously been added to another bridge, have a look at: [https://github.com/vanviegen/hue-thief/](https://github.com/vanviegen/hue-thief/)
